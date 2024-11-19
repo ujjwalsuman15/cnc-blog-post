@@ -1,0 +1,37 @@
+/* =============== universal section start */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    transition: all 1s ease-in-out !important;
+}
+
+a.active {
+    color: #EA512E !important;
+}
+
+/* =============== /universal section end */
+
+/* ============== header section start */
+
+.navbar .navbar-collapse a:hover {
+    color: #EA512E !important;
+    font-weight: bold !important;
+    transition: all 1s ease-in-out !important;
+}
+/* 
+.dropdown-item.active {
+    background: none;
+} */
+
+/* ============== /header section end */
