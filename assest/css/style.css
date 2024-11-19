@@ -1,4 +1,4 @@
-/* =============== universal section start */
+/* =============== universal section start ============== */
 
 * {
     margin: 0px;
@@ -20,18 +20,35 @@ a.active {
     color: #EA512E !important;
 }
 
-/* =============== /universal section end */
+/* =============== /universal section end ============== */
 
-/* ============== header section start */
+/* ============== header section start ============== */
 
 .navbar .navbar-collapse a:hover {
     color: #EA512E !important;
     font-weight: bold !important;
     transition: all 1s ease-in-out !important;
 }
-/* 
-.dropdown-item.active {
-    background: none;
-} */
 
-/* ============== /header section end */
+/* ============== /header section end ============== */
+
+/* Filter styles start*/
+/* 
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(100%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.25); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+.rss.opacity { filter: opacity(50%); } */
+
+/* /Filter styles end */
+
+/* ============== hero section start ============== */
+.hero-section #carouselExampleAutoplaying .carousel-inner img {
+    filter: grayscale(50%);
+}
+
+/* ============== /hero section end ============== */
