@@ -1,11 +1,16 @@
 /* =============== universal section start ============== */
+/* =============== font style link section start =============== */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* =============== /font style link section end =============== */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     border: none;
-    font-family: "Catamaran", sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 16px;
 }
 
@@ -23,11 +28,15 @@ a.active {
 /* =============== /universal section end ============== */
 
 /* ============== header section start ============== */
+.navbar-brand {
+    margin-left: 40px;
+}
 
 .navbar .navbar-collapse a:hover {
     color: #EA512E !important;
     font-weight: bold !important;
     transition: all 1s ease-in-out !important;
+    letter-spacing: 1px;
 }
 
 /* ============== /header section end ============== */
@@ -47,8 +56,148 @@ a.active {
 /* /Filter styles end */
 
 /* ============== hero section start ============== */
-.hero-section #carouselExampleAutoplaying .carousel-inner img {
-    filter: grayscale(50%);
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 5rem;
+    height: 5rem;
 }
 
+/* .hero-section #carouselExampleAutoplaying .carousel-inner img {
+    filter: grayscale(70%);
+} */
+
 /* ============== /hero section end ============== */
+.blog-area .blog-searchbar form {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.blog-area .blog-searchbar form label {
+    display: block;
+    margin-bottom: 0;
+}
+
+.blog-area .blog-searchbar form .screen-text {
+    display: none;
+}
+
+.blog-area .blog-searchbar form .search-field {
+    background-color: transparent;
+    height: 50px;
+    padding: 8px 15px;
+    border: 1px solid #e2e2e2;
+    width: 100%;
+    display: block;
+    outline: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.blog-area .blog-searchbar form button {
+    border: none;
+    background-color: #eeeeee;
+    color: #f5890d;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 5px;
+    padding: 0;
+    transition: 0.5s;
+    top: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog-area #blog-section {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgb(224, 224, 224);
+    border-radius: 15px;
+    padding: 30px 0px 30px 0px;
+}
+
+.blog-area .popular-blog-area .popular-blog-title h1 {
+    color: #86c222;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom-width: 3px;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom-style: solid;
+    margin-bottom: 10px;
+    border-image: linear-gradient(90deg, rgba(2, 0, 36, 0) 17%, rgba(238, 170, 35, 1) 48%, rgba(0, 212, 255, 0) 86%) 1;
+}
+
+.blog-area .popular-blog-area .popular-blog-content {
+    padding: 20px 0px 20px 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgb(158, 158, 158);
+}
+
+.blog-area .popular-blog-area .popular-blog-content .blog-img {
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.blog-area .popular-blog-area .popular-blog-content .blog-img img {
+    transform: rotate(0deg) scale(1);
+    transition: all 0.3s linear;
+}
+
+.blog-area .popular-blog-area .popular-blog-content:hover img {
+    transform: rotate(4deg) scale(1.09);
+    transition: all 0.3s linear;
+}
+
+.blog-area .popular-blog-area .popular-blog-content .blog-1-content p {
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+}
+
+.blog-area .categories-area {
+    position: sticky;
+    top: 10px;
+}
+
+.blog-area .categories-area ul {
+    list-style: none;
+
+}
+
+.blog-area .categories-area ul li {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    transition: 0.5s all ease-in;
+}
+
+.blog-area .categories-area ul li:hover {
+    color: #EA512E;
+    letter-spacing: 2px;
+    transition: 0.5s all ease-out;
+    cursor: pointer;
+}
+
+.blog-area .categories-area ul li .i {
+    margin-right: 4px;
+    font-size: 18px;
+    color: #EA512E;
+    transition: 0.5s all ease-in;
+}
+
+.blog-area .categories-area ul li:hover .i {
+    margin-right: 0px;
+    color: #000;
+    transition: 0.5s all ease-out;
+}
+
+/* ============== /blog section end ============== */
